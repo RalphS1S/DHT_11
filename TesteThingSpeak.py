@@ -6,7 +6,7 @@ import sys
 while True:
     umid, temp = dht.read_retry(dht.DHT11, 4)
     t.sleep(10)
-    chave = '067R1XZ158FU3L0C'
+    chave = 'YOURKEY'
     url = 'https://api.thingspeak.com/update?api_key={}&field1={}&field2={}'
     if temp < 31.0 or umid < 70.0:
         print('Temp: {0:0.1f}   Umid: {1:0.1f}'.format(temp, umid))
